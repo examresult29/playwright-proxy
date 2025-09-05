@@ -1,0 +1,17 @@
+{
+  "name": "playwright-result-proxy",
+  "version": "1.0.0",
+  "description": "Educational proxy using Playwright",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "playwright": "^1.41.0"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "license": "MIT"
+}

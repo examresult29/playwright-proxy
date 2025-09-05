@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: playwright-result-proxy
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.x
