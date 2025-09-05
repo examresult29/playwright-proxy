@@ -1,8 +1,10 @@
 services:
   - type: web
-    name: playwright-result-proxy
+    name: playwright-proxy
     env: node
-    buildCommand: npm install
+    buildCommand: |
+      npm install
+      npx playwright install --with-deps chromium
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
